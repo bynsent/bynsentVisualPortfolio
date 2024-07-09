@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VFX & Compositing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Libs and Plugins CSS -->
+    <link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
+
+    <!-- Template master CSS -->
+    <link rel="stylesheet" href="assets/css/helper.css">
+    <link id="tt-themecss" rel="stylesheet" href="assets/css/theme.css">
+
+    <style>
+        /* Popup modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            position: relative;
+            margin: 5% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 700px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #000;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
+    <main id="body-inner">
+        <div id="page-transition">
+            <div class="ptr-overlay"></div>
+            <div class="ptr-preloader">
+                <div class="ptr-prel-content">
+                    <img src="assets/img/logo-light.png" class="ptr-prel-image tt-logo-light" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <div id="magic-cursor">
+            <div id="ball"></div>
+        </div>
+        <div id="scroll-container">
+            <header id="tt-header" class="tt-header-fixed">
+                <div class="tt-header-inner">
+                    <div class="tt-header-col">
+                        <div class="tt-logo"> 
+                            <a href="index.html">
+                                <img src="assets/img/logo-light.png" class="tt-logo-light magnetic-item" alt="Logo">
+                                <img src="assets/img/logo-dark.png" class="tt-logo-dark magnetic-item" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="content-wrap">
+                
+                    <div class="page-header-inner tt-wrap">
+                        <div class="ph-caption">
+                            <div class="ph-categories ph-appear">
+                                <div class="ph-category">People</div>
+                            </div>
+                            <h1 class="ph-caption-title">
+                                <div class="ph-appear">Talking Heads</div>
+                            </h1>
+                            <div class="ph-caption-title-ghost">
+                                <div class="ph-appear">Talking Heads</div>
+                            </div>
+                        </div>
+                    </div>                       
+                
+
+                <div id="page-content">
+                    <div class="tt-section no-padding-bottom">
+                        <div class="tt-section-inner tt-wrap max-width-1600">
+                            <div class="tt-gallery ttga-hover">
+                                <div class="tt-grid ttgr-layout-2 ttgr-gap-2 ttgr-not-cropped">
+                                    <div class="tt-grid-items-wrap isotope-items-wrap">
+                                        
+										<div class="tt-grid-item isotope-item">
+                                            <div class="ttgr-item-inner">
+                                                <a href="#" class="tt-gallery-item" data-cursor="View" onclick="openModal('https://www.youtube.com/embed/9y1yarQBStE')">
+                                                    <div class="tt-gallery-item-inner">
+                                                        <div class="tt-gallery-image-wrap anim-zoomin">
+                                                            <figure class="tt-gallery-image ttgr-height">
+                                                                <img src="https://img.youtube.com/vi/9y1yarQBStE/hqdefault.jpg" alt="video thumbnail">
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="tt-footer" class="footer-absolute">
+                    <div class="tt-footer-inner">
+                        <div class="footer-col tt-align-left order-m-last">
+                            <div class="footer-col-inner">
+                                <div class="tt-copyright text-gray">
+                                    <a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-btn tt-btn-link">
+                                        <span class="tt-btn-icon"><i class="far fa-copyright"></i></span>
+                                        <div data-hover="bynsent">bynsent</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <iframe id="videoFrame" width="100%" height="400" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Core JS -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/gsap/gsap.min.js"></script>
+    <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/vendor/smooth-scrollbar.js"></script>
+    <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script>
+    <script src="assets/vendor/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <script>
+        function openModal(videoUrl) {
+            document.getElementById("videoFrame").src = videoUrl;
+            document.getElementById("videoModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("videoFrame").src = "";
+            document.getElementById("videoModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("videoModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

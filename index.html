@@ -1,135 +1,332 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en" class="minimal-style is-menu-fixed is-always-fixed is-selection-shareable blog-animated header-light header-small" data-effect="slideUp">
-<head>
+<!--
+	Template:   Nui - Creative Portfolio Showcase HTML Website Template
+	Author:     Themetorium
+	URL:        https://themetorium.net/
+-->
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Impose - Responsive HTML5 Template">
-    <meta name="keywords" content="personal, blog, html5">
-    <meta name="author" content="Pixelwars">
-    <title>bynsent's Visual Portfolio</title>
-    
-    <!-- FAV and TOUCH ICONS -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png"/>
-    
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400,400i,700,700i|Poppins:300,400,500,600,700" rel="stylesheet">
-    
-    <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
-    <link rel="stylesheet" type="text/css" href="js/jquery.magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="js/jquery.fluidbox/fluidbox.css">
-    <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="js/selection-sharer/selection-sharer.css">
-    <link rel="stylesheet" type="text/css" href="css/rotate-words.css">
-    <link rel="stylesheet" type="text/css" href="css/align.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="js/shortcodes/shortcodes.css">
-    <link rel="stylesheet" type="text/css" href="css/768.css">
-    <link rel="stylesheet" type="text/css" href="css/992.css">
+<html lang="en">
+	<head>
 
-    <!-- INITIAL SCRIPTS -->
-	<script src="js/modernizr.min.js"></script>
+		<!-- Title -->
+		<title>bynsent's portfolio</title>
 
-</head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="description" content="Download Nui - Creative Portfolio Showcase HTML Website Template that comes with rich features and well-commented code. Made by Themetorium.">
+		<meta name="author" content="themetorium.net">
 
-<body class="  ">
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   
-        <!-- site-main -->
-        <div id="main" class="site-main">
-<div class="layout-medium"> 
-            <div id="primary" class="content-area">
-             
-            
-            
-            
-             
+		<!-- Favicon (http://www.favicon-generator.org/) -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- Your Google Analytics code goes here -->
+
+		<!-- Google fonts (https://www.google.com/fonts) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
+
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
+		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
+		<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+
+		<!-- Template master CSS -->
+		<link rel="stylesheet" href="assets/css/helper.css">
+		<link id="tt-themecss" rel="stylesheet" href="assets/css/theme.css">
+
+	</head>
+
+	
+	<!-- ===========
+	///// Body /////
+	================
+	* Use class "tt-boxed" to enable page boxed layout globally (affects all elements containing class "tt-wrap").
+	* Use class "tt-smooth-scroll" to enable page smooth scrolling.
+	* Use class "tt-transition" to enable page transitions.
+	* Use class "tt-magic-cursor" to enable magic cursor.
+	* Note: there may be classes that are specific to this page only!
+	-->
+	<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
+
+
+		<!-- *************************************
+		*********** Begin body inner ************* 
+		************************************** -->
+		<main id="body-inner">
+
+			<!-- Begin page transition (do not remove!!!) 
+			=========================== -->
+			<div id="page-transition">
+				<div class="ptr-overlay"></div>
+				<div class="ptr-preloader">
+					<div class="ptr-prel-content">
+						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
+						<img src="assets/img/logo-light.png" class="ptr-prel-image tt-logo-light" alt="Logo">
+					</div> <!-- /.ptr-prel-content -->
+				</div> <!-- /.ptr-preloader -->
+			</div>
+			<!-- End page transition -->
+
+			<!-- Begin magic cursor 
+			======================== -->
+			<div id="magic-cursor">
+				<div id="ball"></div>
+			</div>
+			<!-- End magic cursor --> 
+
+
+			<!-- *****************************************
+			*********** Begin scroll container *********** 
+			****************************************** -->
+			<div id="scroll-container"> 
+				
+				<!-- ===================
+				///// Begin header /////
+				========================
+				* Use class "tt-header-fixed" to set header to fixed position.
+				-->
+				<header id="tt-header" class="tt-header-fixed">
+					<div class="tt-header-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+
+						<div class="tt-header-col">
+
+							<!-- Begin logo 
+							================ -->
+							<div class="tt-logo"> 
+								<a href="index.html">
+									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
+									<img src="assets/img/logo-light.png" class="tt-logo-light magnetic-item" alt="Logo"> <!-- logo light -->
+									<img src="assets/img/logo-dark.png" class="tt-logo-dark magnetic-item" alt="Logo"> <!-- logo dark -->
+								</a>
+							</div>
+							<!-- End logo -->
+
+						</div> <!-- /.tt-header-col -->
+					</div> <!-- /.header-inner -->
+				</header>
+				<!-- End header -->
+
+				
+				<!-- *************************************
+				*********** Begin content wrap *********** 
+				************************************** -->
+				<div id="content-wrap">
+
+
+					<!-- *************************************
+					*********** Begin page content *********** 
+					************************************** -->
+					<div id="page-content">
+
+
+						<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+						<div class="tt-section no-padding">
+							<div class="tt-section-inner tt-wrap">
+
+								<!-- Begin portfolio interactive 
+								=================================
+								* Use class "pi-inline" to enable inline style.
+								* Use class "pi-center" to enable center style.
+								* Use class "pi-stroke" to enable title stroke style.
+								Note: class "pi-full" is required only if the portfolio interactive section is a stand-alone element of the page (no "page-header", no other sections). Also, the top and bottom padding must be removed from the "tt-section" (use the "no-padding" class)!
+								-->
+								<div class="portfolio-interactive pi-full">
+									<div class="pi-inner">
+
+										<div class="portfolio-interactive-ghost">Portfolio</div>
+
+										<!-- Begin portfolio interactive list 
+										====================================== -->
+										<div class="portfolio-interactive-list">
+
+											<!-- Begin portfolio interactive item 
+											====================================== -->
+											<div class="portfolio-interactive-item">
+
+												<!-- Add class "pi-item-image-is-light" if you use a very light image -->
+												<figure class="pi-item-image">
+													<div class="pi-item-image-inner">
+														<img src="assets/img/portfolio/940/portfolio-1.jpg" alt="image">
+													</div> <!-- /.pi-item-image-inner -->
+												</figure> <!-- /.pi-item-image -->
+
+												<a href="project page 01.html" class="pi-item-title-link skew-on-scroll">
+													<div class="pi-item-title-link-inner">
+														<h2 class="pi-item-title">Talking Heads</h2>
+														<div class="pi-item-hover-title">Talking Heads</div>
+													</div>
+													<div class="pi-item-category-wrap">
+														<div class="pi-item-category">People</div>
+														<!-- <div class="pi-item-category">Varia</div> -->
+													</div>
+												</a> <!-- /.pi-item-title-link -->
+											</div>
+											<!-- End portfolio interactive item -->
+
+											<!-- Begin portfolio interactive item 
+											====================================== -->
+											<div class="portfolio-interactive-item">
+
+												<!-- Add class "pi-item-image-is-light" if you use a very light image -->
+												<figure class="pi-item-image">
+													<div class="pi-item-image-inner">
+														<img src="assets/img/portfolio/940/VFX thumbnail.png" alt="image">
+													</div> <!-- /.pi-item-image-inner -->
+												</figure> <!-- /.pi-item-image -->
+
+												<a href="project page 02.html" class="pi-item-title-link skew-on-scroll">
+													<div class="pi-item-title-link-inner">
+														<h2 class="pi-item-title">VFX & Compositing</h2>
+														<div class="pi-item-hover-title">VFX & Compositing</div>
+													</div>
+													<div class="pi-item-category-wrap">
+														<div class="pi-item-category">Movie Magic</div>
+														<!-- <div class="pi-item-category">Varia</div> -->
+													</div>
+												</a> <!-- /.pi-item-title-link -->
+											</div>
+											<!-- End portfolio interactive item -->
+
+											<!-- Begin portfolio interactive item 
+											====================================== -->
+											<div class="portfolio-interactive-item">
+
+												<!-- Add class "pi-item-image-is-light" if you use a very light image -->
+												<figure class="pi-item-image">
+													<div class="pi-item-image-inner">
+													<video class="pi-item-video" loop muted preload="metadata" poster="assets/vids/fashion-shoot.jpg">
+														<source src="assets/vids/VFX_Thumbnail.mp4" type="video/mp4">
+														<source src="assets/vids/VFX_Thumbnail.mp4" type="video/mp4">
+													</video>
+													</div> <!-- /.pi-item-image-inner -->
+												</figure> <!-- /.pi-item-image -->
+
+												<a href="project page 03.html" class="pi-item-title-link skew-on-scroll">
+													<div class="pi-item-title-link-inner">
+														<h2 class="pi-item-title">Animation</h2>
+														<div class="pi-item-hover-title">Animation</div>
+													</div>
+													<div class="pi-item-category-wrap">
+														<div class="pi-item-category">Creative Motion</div>
+														<!-- <div class="pi-item-category">Varia</div> -->
+													</div>
+												</a> <!-- /.pi-item-title-link -->
+											</div>
+											<!-- End portfolio interactive item -->
+
+											<!-- Begin portfolio interactive item 
+											====================================== -->
+											<div class="portfolio-interactive-item">
+
+												<!-- Add class "pi-item-image-is-light" if you use a very light image -->
+												<figure class="pi-item-image">
+													<div class="pi-item-image-inner">
+														<img src="assets/img/portfolio/940/portfolio-3.jpg" alt="image">
+													</div> <!-- /.pi-item-image-inner -->
+												</figure> <!-- /.pi-item-image -->
+
+												<a href="project page 04.html" class="pi-item-title-link skew-on-scroll">
+													<div class="pi-item-title-link-inner">
+														<h2 class="pi-item-title">Gaming</h2>
+														<div class="pi-item-hover-title">Gaming</div>
+													</div>
+													<div class="pi-item-category-wrap">
+														<div class="pi-item-category">Let's Play!</div>
+														<!-- <div class="pi-item-category">Varia</div> -->
+													</div>
+												</a> <!-- /.pi-item-title-link -->
+											</div>
+											<!-- End portfolio interactive item -->
+									
+										</div>
+										<!-- End portfolio interactive list -->
+
+									</div> <!-- /.pi-inner -->
+
+								</div>
+								<!-- End portfolio interactive -->
+
+							</div> <!-- /.tt-section-inner -->
+						</div>
+						<!-- End tt-section -->
+
+
+					</div>
+					<!-- End page content -->
+					
+
+					<!-- ======================
+					///// Begin tt-footer /////
+					=========================== -->
+					<footer id="tt-footer">
+						<div class="tt-footer-inner">
+							<!-- Begin footer column 
+							========================= -->
+							<div class="footer-col tt-align-center-left order-m-last">
+								<div class="footer-col-inner">
+
+									<a href="contact.html" class="tt-btn tt-btn-link">
+										<span class="tt-btn-icon"><i class="far fa-envelope"></i></span>
+										<div data-hover="Get in Touch">Get in Touch</div>
+									</a>
+
+								</div> <!-- /.footer-col-inner -->
+							</div>
+						</div> <!-- /.tt-section-inner -->
+					</footer>
+					<!-- End tt-footer -->
+
+
+				</div>
+				<!-- End content wrap -->
+
+			</div>
+			<!-- End scroll container -->
+
+
+		</main>
+		<!-- End body inner -->
+
+
         
-        	
 
-            
-                    <!-- site-content -->
-                    <div id="content" class="site-content" role="main"> <!-- .hentry -->
-                        <article class="hentry page">
-                            
-                                
-                            <!-- .entry-content -->
-                            <div class="entry-content intro" data-animation="rotate-1">
-                                
-                                
-                                
-                                <!-- .profile-image -->
-                                <div class="profile-image">
-                                	<img alt="profile" src="images/site/cat solo.png"/>
-                                </div>  
-                                <!-- .profile-image -->
-                                
-                                
-                                <h2><em>Hi.</em> I am bynsent</h2>
-                                <p><h3><strong>video editor</strong> <strong>visual storyteller</strong> <strong>AI enthusiast</strong></h3></div></article></p>
-                                
-                                
-                                <!-- .link-boxes -->
-                                <iframe width="420" height="315"
-                                src='https://youtube.com/embed/9y1yarQBStE'>
-                                </iframe>
-                            
-                                <iframe width="420" height="315"
-                                src='https://youtube.com/embed/oKFebpV6gNk'>
-                                </iframe>
+		<!-- ====================
+		///// Scripts below /////
+		===================== -->
 
-                                <iframe width="420" height="315"
-                                src='https://youtube.com/embed/Uc-8J_Ba8DM'>
-                                </iframe>
-                                
-                                <iframe width="420" height="315"
-                                src='https://youtube.com/embed/IAzGAlN5ahU'>
-                                </iframe>
-                                
-                                <iframe width="420" height="315"
-                                src='https://youtube.com/embed/sqzJeg8fQXM'>
-                                </iframe>
-            
-            </div>
-            <!-- .site-info -->
-            
-            
-            
-		</footer>
-        <!-- site-footer -->
+		<!-- Core JS -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
 
-        
-	</div>
-    <!-- page -->
-    
+		<!-- Libs and Plugins JS -->
+		<script src="assets/vendor/gsap/gsap.min.js"></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
+		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script> <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
+		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script> <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
 
-    <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-	   if (!window.jQuery) { 
-		  document.write('<script src="js/jquery-3.1.1.min.js"><\/script>'); 
-	   }
-	</script>
-    <script src="js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="js/fastclick.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.viewport.mini.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>    
-    <script src="js/jquery-validation/jquery.validate.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.fluidbox/jquery.fluidbox.min.js"></script>
-    <script src="js/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/selection-sharer/selection-sharer.js"></script>
-    <script src="js/socialstream.jquery.js"></script>
-    <script src="js/jquery.collagePlus/jquery.collagePlus.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/shortcodes/shortcodes.js"></script>
+		<script src="assets/vendor/smooth-scrollbar.js"></script> <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
+		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script> <!-- Swiper JS (https://swiperjs.com/) -->
+		<script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script> <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
+		<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+		<script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
+		<script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+		<script src="assets/vendor/jquery.mousewheel.min.js"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
 
-</body>
+		<!-- Template master JS -->
+		<script src="assets/js/theme.js"></script>
+
+
+
+	</body>
+
 </html>
